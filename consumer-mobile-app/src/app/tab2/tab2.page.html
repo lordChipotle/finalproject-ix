@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Explore
+    </ion-title>
+
+  </ion-toolbar>
+  <ion-searchbar animated showCancelButton="always" placeholder="Search your new adventures here"></ion-searchbar>
+
+</ion-header>
+
+<ion-list>
+    <ion-item *ngFor = "let listing of listings"></ion-item>
+    <div (click)="listingModal()">
+      {{listing.name}}
+    </div>
+  </ion-list>

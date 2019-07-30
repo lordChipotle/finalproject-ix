@@ -1,0 +1,7 @@
+{
+  "name": "d2hw/",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

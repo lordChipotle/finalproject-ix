@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        {{listing.name}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    
+    <ion-card>
+      <ion-image>
+          <img src="/assets/images/dan.jpg">
+        </ion-image>
+        <ion-item>
+          <h1>Aloha! I'm {{listing.provider}}</h1>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-button (click)="logout()">Logout</ion-button>
+      </ion-card>
+      <ion-card>
+        <h2>Bio:</h2>
+        <h4>{{listing.bio}}</h4>
+      </ion-card>
+      <ion-card>
+        <ion-icon></ion-icon>
+        <ion-item>Location: {{listing.location}}</ion-item>
+        
+      </ion-card>
+      <ion-card>
+          <ion-item>
+        <ion-icon name = "rating-icon"></ion-icon>
+  
+        <h6>{{listing.reviews}} Reviews</h6>
+        <ion-icon name = "contract-icon"></ion-icon>
+         <h6>{{listing.orders}} Bookings made at this property</h6>
+        </ion-item>
+        <ion-list>
+          <ion-item>
+              
+            <ion-label>Jan 6, 2019</ion-label>
+            <br>
+            <p>Best homemade Chipotle meal I've ever had!</p>
+            <ion-avatar>
+                <img src="assets/images/chipotle.png">
+              </ion-avatar>
+          </ion-item>
+          <ion-item>
+              <ion-label>Jan 6, 2019</ion-label>
+              <br>
+              <p>La comida mexicana aqui es muy fuego </p>
+              <ion-avatar>
+                  <img src="/assets/images/mexico.jpg">
+                </ion-avatar>
+            </ion-item>
+            <ion-item>
+  
+                <ion-label>Jan 6, 2019</ion-label>
+                <br>
+              <p>Woof!</p>
+              <ion-avatar>
+                  <img src="/assets/images/woof.jpeg">
+                </ion-avatar>
+            </ion-item>
+        </ion-list>
+      </ion-card>
+  
+  </ion-content>
+  

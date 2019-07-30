@@ -1,0 +1,7 @@
+{
+  "name": "providerApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

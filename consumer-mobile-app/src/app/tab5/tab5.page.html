@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Saved
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar padding color="light">
+      <p ion-text no-margin class="text-white">
+        <strong>{{saved.length}}</strong> results found!
+      </p>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-card *ngIf = "!hasSavedContents">
+  <ion-item>You don't have any listings saved yet</ion-item>
+  <ion-button (click)="go()">
+    Start Exploring Here!
+  </ion-button>
+</ion-card>
+<ion-card *ngIf = "hasSavedContents">
+    <ion-list>
+        <ion-item *ngFor = "let item of saved"></ion-item>
+        <div>
+          {{item.name}}
+        </div>
+      </ion-list>
+</ion-card>
+    
+</ion-content>

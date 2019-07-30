@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Trips
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar padding color="light">
+    <p ion-text no-margin class="text-white">
+      <strong>{{trips.length}}</strong> results found!
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-card *ngIf = "!hasTrips">
+  <ion-item>You don't have any trips yet</ion-item>
+  <ion-button (click)="go()">
+    Explore New Adventures
+  </ion-button></ion-card>
+  <ion-card *ngIf = "hasTrips">
+      <ion-list>
+          <ion-item *ngFor = "let item of trips"></ion-item>
+          <div>
+            {{item.name}}
+          </div>
+        </ion-list>
+  </ion-card>
+</ion-content>

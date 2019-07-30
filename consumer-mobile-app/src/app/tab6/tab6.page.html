@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-avatar>
+        <img src="/assets/images/dan.jpg">
+      </ion-avatar>
+      <ion-item>
+        <h1>Aloha! I'm {{user.firstname}} {{user.surname}}</h1>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-button (click)="logout()">Logout</ion-button>
+    </ion-card>
+    <ion-card>
+      <h2>Bio:</h2>
+      <h4>Welcome to Chipotle</h4>
+    </ion-card>
+    <ion-card>
+      <ion-icon></ion-icon>
+      <ion-item>Lives in London, GB</ion-item>
+      <ion-icon></ion-icon>
+      <ion-item>From Manchester, CT</ion-item>
+    </ion-card>
+    <ion-card>
+       
+    </ion-card>
+
+</ion-content>
