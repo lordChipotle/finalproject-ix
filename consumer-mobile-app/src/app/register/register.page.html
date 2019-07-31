@@ -4,9 +4,7 @@
     </ion-toolbar>
 
   </ion-header>
-  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
-      <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
-    </div>
+  
     
   <ion-content padding>
     <form #form="ngForm" (ngSubmit)="register(form)" method="post">

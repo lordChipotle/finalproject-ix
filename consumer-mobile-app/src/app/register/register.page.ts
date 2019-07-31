@@ -5,53 +5,12 @@ import { NgForm } from '@angular/forms';
 import { AlertService } from 'src/app/services/alert.service';
 import { Tab1Page } from '../tab1/tab1.page';
 import { ForgetpasswordPage } from '../forgetpassword/forgetpassword.page';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
-  styleUrls: ['./register.page.scss'],
-  animations: [
-    // animation triggers go here
-    trigger('openClose', [
-      // ...
-      state('open', style({
-        height: '200px',
-        opacity: 1,
-        backgroundColor: 'yellow'
-      })),
-      state('closed', style({
-        height: '100px',
-        opacity: 0.5,
-        backgroundColor: 'green'
-      })),
-      transition('open => closed', [
-        animate('1s')
-      ]),
-      transition('closed => open', [
-        animate('0.5s')
-      ]),
-    ]),
-  ]
-
-  
+  styleUrls: ['./register.page.scss']
 })
-export class OpenCloseComponent {
-  isOpen = true;
-  constructor(){
-   }
-  toggle() {
-    this.isOpen = !this.isOpen;
-  }
-
-}
-
 export class RegisterPage implements OnInit {
   constructor(private modalController: ModalController,
     private authService: AuthService,
