@@ -9,7 +9,7 @@
 
 </ion-header>
 <ion-content>
-    <ion-card *ngFor = "let listing of listings; let i = index"(click)="listingModal()">
+    <ion-card *ngFor = "let listing of listings; let i = index"(click)="listingModal(i)">
       <ion-card-content>
       <div >
         <h1>{{listing.name}}</h1>

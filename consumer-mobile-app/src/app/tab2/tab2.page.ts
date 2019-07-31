@@ -32,20 +32,20 @@ export class Tab2Page implements OnInit{
     // console.log(this.listings);
     // debugger;
     this.getAll();
-    this.listingCOUNT = this.listings.length - 1;
   }
   search(){
 
   }
   clickIntoListing(data,index){
-    debugger;
+    
     localStorage.setItem('listingId',data[index].id)
+    debugger;
 
   }
   
-  async listingModal() {
+  async listingModal(index) {
     debugger;
-    this.clickIntoListing(this.listings,this.listingCOUNT);
+    this.clickIntoListing(this.listings,index);
 
     const listingModal = await this.modalController.create({
       component: ListingPage

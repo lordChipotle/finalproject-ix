@@ -3,6 +3,8 @@ import { ModalController, NavController } from '@ionic/angular';
 import {ListingService} from '../services/listing.service'
 import { ListingModel } from '../models/listing-model';
 import { AlertService } from '../services/alert.service';
+import { Tab2Page } from '../tab2/tab2.page';
+
 @Component({
   selector: 'app-listing',
   templateUrl: './listing.page.html',
